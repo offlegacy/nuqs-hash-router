@@ -1,4 +1,4 @@
-# nuqs-hash-router &middot; ![MIT License](https://img.shields.io/github/license/offlegacy/nuqs-hash-router) ![unofficial](https://img.shields.io/badge/Unofficial-red)
+# nuqs-hash-router &middot; ![NPM Version](https://img.shields.io/npm/v/%40offlegacy%2Fnuqs-hash-router) ![MIT License](https://img.shields.io/github/license/offlegacy/nuqs-hash-router) ![unofficial](https://img.shields.io/badge/Unofficial-red)
 
 > [!IMPORTANT]
 > This package is not an official adapter of nuqs, and caution is advised when using it in production (especially in enterprise environments). (Although it's unofficial, I am actually using it successfully in a company project. Thanks to our team.)
