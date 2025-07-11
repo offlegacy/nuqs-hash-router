@@ -1,0 +1,1 @@
+# nuqs-hash-router (unofficial)

@@ -1,0 +1,60 @@
+{
+  "name": "@offlegacy/nuqs-hash-router",
+  "version": "0.1.0",
+  "description": "nuqs adaptor for Hash Router (unofficial)",
+  "keywords": [
+    "nuqs",
+    "nuqs-adapter",
+    "hash-router",
+    "react",
+    "react-router",
+    "react-router-dom"
+  ],
+  "homepage": "https://github.com/offlegacy/nuqs-hash-router",
+  "bugs": "https://github.com/offlegacy/nuqs-hash-router/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offlegacy/nuqs-hash-router.git"
+  },
+  "license": "MIT",
+  "author": "Gwansik Kim <gwansik.kim@gwansik.dev>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest --coverage",
+    "check-types": "tsc --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.23"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "nuqs": ">=2.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

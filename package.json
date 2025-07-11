@@ -1,0 +1,44 @@
+{
+  "name": "nuqs-hash-router",
+  "private": true,
+  "homepage": "https://github.com/offlegacy/nuqs-hash-router",
+  "bugs": "https://github.com/offlegacy/nuqs-hash-router/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offlegacy/nuqs-hash-router.git"
+  },
+  "license": "MIT",
+  "author": "Gwansik Kim <gwansik.kim@gwansik.dev>",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "ci:test": "turbo run test",
+    "ci:type": "turbo run check-types",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --cache"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/eslint": "^9.6.1",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "@vitest/coverage-istanbul": "^3.2.4",
+    "eslint": "^9.30.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}
