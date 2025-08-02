@@ -40,19 +40,19 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
-    "test": "vitest run --coverage",
-    "test:watch": "vitest --coverage",
-    "check-types": "tsc --noEmit --skipLibCheck"
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "ci:test": "vitest run --coverage",
+    "ci:type": "tsc --noEmit --skipLibCheck"
   },
   "devDependencies": {
-    "@types/react": "^18.3.23"
+    "@types/react": "^18",
+    "nuqs": "^2",
+    "react": "^18"
   },
   "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
-    "nuqs": ">=2.4.3"
+    "nuqs": "2",
+    "react": ">=18"
   },
   "publishConfig": {
     "access": "public"

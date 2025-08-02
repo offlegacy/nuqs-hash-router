@@ -5,10 +5,14 @@
     "build": {
       "outputs": ["dist/**"]
     },
-    "test": {
-      "dependsOn": ["^test"],
+    "ci:test": {
+      "dependsOn": ["^ci:test"],
       "outputs": ["coverage/**"],
       "cache": false
+    },
+    "ci:type": {
+      "dependsOn": ["^ci:type"],
+      "outputs": ["dist/**"]
     }
   }
 }

@@ -4,13 +4,8 @@ import {
   type unstable_UseAdapterHook,
 } from 'nuqs/adapters/custom';
 import { useEffect, useState } from 'react';
+import { getCurrentURL } from './utils';
 
-export const NuqsAdapter = unstable_createAdapterProvider(useHashAdapter);
-
-/**
- * @see https://github.com/47ng/nuqs/issues/810#issuecomment-2863556483
- * @see https://github.com/47ng/nuqs/blob/84ee9aa49d74f3a0782ae7bbe5646a3e42cb8e52/packages/nuqs/src/adapters/lib/react-router.ts#L43
- */
 function useHashAdapter(): ReturnType<unstable_UseAdapterHook> {
   const url = getCurrentURL();
   const [hashParams, setHashParams] = useState<URLSearchParams>(new URLSearchParams(url.search));
@@ -64,6 +59,8 @@ function useHashAdapter(): ReturnType<unstable_UseAdapterHook> {
   };
 }
 
-function getCurrentURL() {
-  return new URL(window.location.hash.slice(1), window.location.origin);
-}
+/**
+ * @see https://github.com/47ng/nuqs/issues/810#issuecomment-2863556483
+ * @see https://github.com/47ng/nuqs/blob/84ee9aa49d74f3a0782ae7bbe5646a3e42cb8e52/packages/nuqs/src/adapters/lib/react-router.ts#L43
+ */
+export const NuqsAdapter = unstable_createAdapterProvider(useHashAdapter);
