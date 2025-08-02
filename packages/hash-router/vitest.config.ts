@@ -4,11 +4,8 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: ['./src/test/setup.ts'],
-    coverage: {
-      provider: 'istanbul',
-      reporter: ['text', 'json', 'html'],
-      exclude: ['node_modules/', 'src/test/', '**/*.d.ts', '**/*.config.*', 'dist/'],
-    },
+    setupFiles: ['./vitest.setup.ts'],
+    coverage: { enabled: true, provider: 'istanbul' },
+    typecheck: { enabled: true },
   },
 });

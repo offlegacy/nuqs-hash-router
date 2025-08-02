@@ -1,4 +1,4 @@
-import { expect } from 'vitest';
+import { expect, vi } from 'vitest';
 import * as matchers from '@testing-library/jest-dom/matchers';
 
 expect.extend(matchers);
@@ -18,7 +18,3 @@ Object.defineProperty(window, 'location', {
   },
   writable: true,
 });
-
-global.triggerHashChange = () => {
-  window.dispatchEvent(new Event('hashchange'));
-};

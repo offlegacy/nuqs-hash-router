@@ -14,8 +14,8 @@
     "build": "turbo run build",
     "ci:test": "turbo run ci:test",
     "ci:type": "turbo run ci:type",
-    "knip": "knip",
     "format": "prettier --write .",
+    "knip": "knip",
     "prepare": "husky"
   },
   "lint-staged": {

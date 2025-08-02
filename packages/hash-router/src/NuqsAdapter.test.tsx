@@ -6,7 +6,7 @@ const mockUseAdapter = vi.fn();
 const mockUpdateUrl = vi.fn();
 const mockGetSearchParamsSnapshot = vi.fn();
 
-vi.mock('../NuqsAdapter', () => ({
+vi.mock('./NuqsAdapter', () => ({
   NuqsAdapter: ({ children }: { children: React.ReactNode }) => {
     mockUseAdapter();
     return <div data-testid="nuqs-adapter">{children}</div>;
@@ -37,7 +37,7 @@ describe('NuqsAdapter', () => {
   });
 
   it('should integrate with nuqs adapter system', async () => {
-    const { NuqsAdapter } = await import('../NuqsAdapter');
+    const { NuqsAdapter } = await import('./NuqsAdapter');
 
     const TestApp = () => (
       <NuqsAdapter>
