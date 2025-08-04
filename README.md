@@ -56,6 +56,6 @@ We welcome contribution from everyone in the community. Read below for detailed 
 
 ## License
 
-See [LICENSE]() for more information.
+See [LICENSE](https://github.com/offlegacy/nuqs-hash-router/blob/main/LICENSE) for more information.
 
 MIT © [OffLegacy](https://www.offlegacy.org/)

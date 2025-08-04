@@ -1,6 +1,6 @@
 {
   "name": "@offlegacy/nuqs-hash-router",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "nuqs adaptor for Hash Router (unofficial)",
   "keywords": [
     "nuqs",
